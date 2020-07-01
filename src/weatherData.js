@@ -10,7 +10,7 @@ function Weather({countryName,cityName, description, temp,icon, maxTemp, minTemp
                 {/* <p className="numeric-font text-center">Mon, 2:25 PM</p> */}
                 <div className="container row flex-column pl-5">
                     <div className="row d-flex justify-content-start mt-5">
-                        <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="icon"/>
+                        <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="icon"/>
                         <h2 className="sub-heading my-auto text-capitalize">{description} </h2>
                     </div>
                     <div className="row">

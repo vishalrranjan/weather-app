@@ -22,7 +22,7 @@ function Forecast (){
   // Reach-Hook Lifecycle Methods -
   
   useEffect(()=>{
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=11a9b4da876bfdca782f464bb924c855`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=11a9b4da876bfdca782f464bb924c855`;
     fetch(url)
       .then(response => response.json())
       .then(data =>{
@@ -60,7 +60,7 @@ function Forecast (){
         
           <div className="input-box">
             <input className="search-bar" onChange={updateSearch} type="text" placeholder="Enter Your City" value={search}/>
-            <button className="search-button" onClick={getSearch} title="search your city"><i class="fas fa-search-location"></i></button>
+            <button className="search-button" onClick={getSearch} title="search your city"><i className="fas fa-search-location"></i></button>
           </div>
         
         <Weather  
